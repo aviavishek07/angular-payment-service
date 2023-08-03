@@ -1,0 +1,22 @@
+<div>
+    <h2>Advance Payment Form</h2>
+    <form (submit)="submitForm()">
+      <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" [(ngModel)]="advancePayment.amount" required>
+      </div>
+      <div>
+        <br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" [(ngModel)]="advancePayment.description" required>
+      </div>
+      <br>
+      <div>
+        <label for="paymentDate">Payment Date:</label>
+        <input type="date" id="paymentDate" name="paymentDate" [(ngModel)]="advancePayment.paymentDate" required>
+      </div>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
